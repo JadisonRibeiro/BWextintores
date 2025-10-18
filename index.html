@@ -1,0 +1,2066 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BW EXTINTORES - Venda, Recarga e Manutenção de Extintores no Pará</title>
+    <meta name="description" content="BW EXTINTORES: Referência no Pará em venda, recarga e manutenção de extintores. Empresa credenciada pelo Inmetro e Corpo de Bombeiros. Atendemos todo o estado.">
+    <meta name="keywords" content="extintor, incêndio, segurança, Pará, Paragominas, recarga, manutenção, Inmetro, bombeiros">
+    <meta name="author" content="BW EXTINTORES">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="BW EXTINTORES - Proteção Contra Incêndios no Pará">
+    <meta property="og:description" content="Há 6 anos garantindo segurança e qualidade em todo o Pará. Empresa credenciada pelo Inmetro e Corpo de Bombeiros.">
+    <meta property="og:type" content="website">
+    
+    <!-- Preload de fontes críticas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome apenas com ícones necessários -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <style>
+        :root {
+            --primary: #FFFFFF;
+            --secondary: #333333;
+            --accent: #621414;
+            --accent-dark: #621414;
+            --accent-light: #EF5350;
+            --accent-yellow: #FFC107;
+            --dark-gray: #F5F5F5;
+            --medium-gray: #E0E0E0;
+            --light-gray: #9E9E9E;
+            --text-dark: #212121;
+            --text-light: #757575;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        
+        body {
+            background-color: var(--primary);
+            color: var(--text-dark);
+            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        /* Header e Navegação */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--accent);
+            z-index: 1000;
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-scrolled {
+            padding: 10px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-img {
+            height: 50px;
+            width: auto;
+        }
+        
+        .logo-text {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-item {
+            margin-left: 25px;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-height: 44px;
+            min-width: 44px;
+            font-size: 0.95rem;
+        }
+        
+        .nav-link:hover,
+        .nav-link:focus {
+            color: var(--accent-yellow);
+            outline: none;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--accent-yellow);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after,
+        .nav-link:focus::after {
+            width: 100%;
+        }
+        
+        .nav-link.active {
+            color: var(--accent-yellow);
+        }
+        
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            min-height: 44px;
+            min-width: 44px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 1001;
+            background: none;
+            border: none;
+        }
+        
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 3px 0;
+            transition: all 0.3s ease;
+            background-color: white;
+        }
+        
+        /* Hero Section Melhorada */
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            margin-top: 80px;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+            color: white;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .hero-content {
+            padding: 0 20px;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            margin-bottom: 20px;
+            line-height: 1.2;
+            color: white;
+            font-weight: 700;
+        }
+
+        .hero h1 span {
+            color: var(--accent-yellow);
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero h1 span::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--accent-yellow);
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.5s ease;
+        }
+
+        .hero h1 span.animate::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 3vw, 1.3rem);
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-weight: 400;
+            max-width: 600px;
+        }
+
+        .hero-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-weight: 500;
+            transition: transform 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px 15px;
+            border-radius: 5px;
+            backdrop-filter: blur(5px);
+        }
+
+        .feature-item:hover {
+            transform: translateX(5px);
+        }
+
+        .feature-icon {
+            color: var(--accent-yellow);
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover .feature-icon {
+            transform: scale(1.2);
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 10px;
+            background: transparent;
+            border: none;
+            animation: float 6s ease-in-out infinite;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: var(--accent-yellow);
+            opacity: 0.1;
+            top: 10%;
+            left: 10%;
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: var(--accent-light);
+            opacity: 0.1;
+            bottom: 10%;
+            right: 10%;
+            animation: pulse 4s ease-in-out infinite reverse;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 1.8rem;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+            z-index: 1;
+            min-height: 44px;
+            min-width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            border: none;
+        }
+
+        /* Carrossel de Produtos */
+        .carousel-section {
+            padding: 60px 0;
+            background-color: var(--dark-gray);
+            overflow: hidden;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100vw;
+            left: 50%;
+            transform: translateX(-50%);
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            animation: carousel-scroll 30s linear infinite;
+        }
+
+        .carousel-item {
+            flex: 0 0 auto;
+            width: 180px;
+            margin: 0 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .carousel-image {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .carousel-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .carousel-item p {
+            font-weight: 500;
+            color: var(--text-dark);
+            font-size: 0.9rem;
+        }
+
+        /* Seções comuns */
+        section {
+            padding: 80px 0;
+            position: relative;
+            background-color: var(--primary);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .section-dark {
+            background-color: var(--dark-gray);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+            padding: 0 20px;
+        }
+
+        .section-title h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            display: inline-block;
+            position: relative;
+            padding-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            bottom: 0;
+            left: 15%;
+            border-radius: 3px;
+        }
+
+        .section-subtitle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+            color: var(--text-light);
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        .section-subtitle i {
+            color: var(--accent);
+        }
+
+        /* Botões */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            background-color: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--accent);
+            text-align: center;
+            justify-content: center;
+            min-width: 160px;
+            min-height: 44px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            background-color: transparent;
+            color: var(--accent);
+            outline: none;
+        }
+
+        .btn-premium {
+            background: linear-gradient(135deg, var(--accent-yellow), #FF9800);
+            border: 2px solid var(--accent-yellow);
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+
+        .btn-premium:hover,
+        .btn-premium:focus {
+            background: transparent;
+            color: var(--accent-yellow);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            border-color: #25D366;
+        }
+
+        .btn-whatsapp:hover,
+        .btn-whatsapp:focus {
+            background-color: transparent;
+            color: #25D366;
+        }
+
+        .btn-small {
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            min-width: auto;
+        }
+
+        /* Diferenciais */
+        .floating-differentials {
+            position: relative;
+            margin-top: 40px;
+            z-index: 10;
+            padding: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .differentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+        
+        .differential-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-hover);
+            animation: float 6s ease-in-out infinite;
+            border: 2px solid var(--accent);
+        }
+        
+        .differential-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .differential-card:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        
+        .differential-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            animation-play-state: paused;
+        }
+        
+        .differential-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        /* Sobre */
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .about-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: float 3s ease-in-out infinite;
+            max-width: 400px;
+        }
+        
+        .about-image img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            display: block;
+            background: transparent;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .about-text {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .about-text h3 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+        
+        .about-text p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .about-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+            justify-content: center;
+        }
+        
+        /* Serviços */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--accent);
+            border: 2px solid var(--accent);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .service-image {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .service-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        /* Produtos */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-shadow: var(--shadow);
+            border: 2px solid var(--accent);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .product-image {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #FFFFFF;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .product-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .product-class {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: flex;
+            gap: 5px;
+        }
+        
+        .class-badge {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+            color: white;
+            border-radius: 50%;
+        }
+        
+        .class-a {
+            background-color: #FF0000;
+        }
+        
+        .class-b {
+            background-color: #FFA500;
+        }
+        
+        .class-c {
+            background-color: #0000FF;
+        }
+        
+        .product-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+        }
+        
+        .product-action {
+            flex: 1;
+        }
+        
+        /* Mapa */
+        .map-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .map-frame {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            position: relative;
+            height: 400px;
+            min-height: 300px;
+        }
+        
+        .map-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .map-info {
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            border: 2px solid var(--accent);
+        }
+        
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            transition: transform 0.3s ease;
+            box-shadow: var(--shadow);
+            border: 2px solid var(--accent);
+        }
+        
+        .faq-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            min-height: 44px;
+            color: var(--text-dark);
+        }
+        
+        .faq-question:hover,
+        .faq-question:focus {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+        
+        .faq-icon {
+            color: var(--accent);
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .faq-arrow {
+            transition: transform 0.3s ease;
+            color: var(--accent);
+        }
+        
+        .faq-item.active .faq-arrow {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: var(--text-light);
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px;
+        }
+        
+        /* Contato */
+        .contact-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .contact-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: var(--shadow);
+            border: 2px solid var(--accent);
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .contact-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--accent);
+            padding: 50px 0 20px;
+            color: white;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            margin-right: 30px;
+        }
+        
+        .footer-column:last-child {
+            margin-right: 0;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-yellow);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover,
+        .footer-links a:focus {
+            color: var(--accent-yellow);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .social-link:hover,
+        .social-link:focus {
+            background-color: var(--accent-yellow);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #25ca61;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+            z-index: 1000;
+            animation: pulse 2s infinite;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover,
+        .whatsapp-float:focus {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.7);
+            outline: none;
+        }
+
+        .whatsapp-float i {
+            color: white;
+            font-size: 30px;
+        }
+        
+        /* Animações */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            40% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+            60% {
+                transform: translateY(-5px) translateX(-50%);
+            }
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+        
+        @keyframes carousel-scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-200px * 8));
+            }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsividade */
+        @media (max-width: 992px) {
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .footer-column {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+            
+            .about-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .about-buttons .btn {
+                text-align: center;
+            }
+            
+            .map-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+            
+            .hero-features {
+                justify-content: center;
+            }
+            
+            .hero-image {
+                order: -1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                gap: 0;
+                flex-direction: column;
+                background-color: var(--accent);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+                padding: 20px 0;
+                height: calc(100vh - 70px);
+                overflow-y: auto;
+                z-index: 999;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-item {
+                margin: 15px 0;
+                width: 100%;
+            }
+            
+            .nav-link {
+                padding: 15px;
+                display: block;
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .hero {
+                margin-top: 70px;
+                height: auto;
+                min-height: 100vh;
+                padding: 40px 0;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .contact-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .product-actions {
+                flex-direction: column;
+            }
+            
+            .map-frame {
+                height: 300px;
+            }
+            
+            .map-container {
+                gap: 20px;
+            }
+            
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .whatsapp-float i {
+                font-size: 25px;
+            }
+            
+            .about-image img {
+                max-width: 250px;
+            }
+            
+            .logo-text {
+                font-size: 1.0rem;
+            }
+            
+            .differentials-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .hero-image img {
+                max-width: 300px;
+            }
+            
+            .carousel-item {
+                width: 180px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                height: auto;
+                min-height: 100vh;
+                padding: 20px 0;
+                margin-top: 70px;
+            }
+            
+            .logo-img {
+                height: 40px;
+            }
+            
+            .logo-text {
+                font-size: 1.0rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .product-card {
+                margin: 0 10px;
+            }
+            
+            .product-actions {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .product-action {
+                width: 100%;
+            }
+            
+            .nav-menu {
+                top: 70px;
+                height: calc(100vh - 70px);
+            }
+            
+            .about-image img {
+                max-width: 200px;
+            }
+            
+            .about-buttons {
+                flex-direction: column;
+            }
+            
+            .hero-features {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .feature-item {
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .carousel-item {
+                width: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header" role="banner">
+        <div class="container">
+            <nav class="nav-container" aria-label="Navegação principal">
+                <div class="logo">
+                    <img src="image/iconeBW.png" alt="BW EXTINTORES" class="logo-img" width="50" height="50" loading="lazy">
+                    <div class="logo-text">BW<span> EXTINTORES</span></div>
+                </div>
+                <ul class="nav-menu" role="menubar">
+                    <li class="nav-item" role="none"><a href="#home" class="nav-link" role="menuitem"><i class="fas fa-home" aria-hidden="true"></i> <span>Início</span></a></li>
+                    <li class="nav-item" role="none"><a href="#about" class="nav-link" role="menuitem"><i class="fas fa-info-circle" aria-hidden="true"></i> <span>Sobre</span></a></li>
+                    <li class="nav-item" role="none"><a href="#services" class="nav-link" role="menuitem"><i class="fas fa-tools" aria-hidden="true"></i> <span>Serviços</span></a></li>
+                    <li class="nav-item" role="none"><a href="#products" class="nav-link" role="menuitem"><i class="fas fa-fire-extinguisher" aria-hidden="true"></i> <span>Produtos</span></a></li>
+                    <li class="nav-item" role="none"><a href="#differentials" class="nav-link" role="menuitem"><i class="fas fa-star" aria-hidden="true"></i> <span>Diferenciais</span></a></li>
+                    <li class="nav-item" role="none"><a href="#map" class="nav-link" role="menuitem"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span>Localização</span></a></li>
+                    <li class="nav-item" role="none"><a href="#faq" class="nav-link" role="menuitem"><i class="fas fa-question-circle" aria-hidden="true"></i> <span>FAQ</span></a></li>
+                    <li class="nav-item" role="none"><a href="#contact" class="nav-link" role="menuitem"><i class="fas fa-envelope" aria-hidden="true"></i> <span>Contato</span></a></li>
+                </ul>
+                <button class="hamburger" aria-label="Menu mobile" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home" aria-label="Seção principal">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Proteção Total Contra <span>Incêndios</span></h1>
+                    <p>Há 6 anos garantindo segurança e qualidade em todo o Pará. Empresa credenciada pelo Inmetro e Corpo de Bombeiros.</p>
+                    
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt feature-icon" aria-hidden="true"></i>
+                            <span>Credenciada Inmetro</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-medal feature-icon" aria-hidden="true"></i>
+                            <span>6 Anos de Experiência</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-truck feature-icon" aria-hidden="true"></i>
+                            <span>Atendimento em Todo Pará</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock feature-icon" aria-hidden="true"></i>
+                            <span>Entrega Rápida</span>
+                        </div>
+                    </div>
+
+                    <div class="about-buttons">
+                        <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar um orçamento" class="btn btn-premium" target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento via WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar Orçamento
+                        </a>
+                        <a href="#services" class="btn">
+                            <i class="fas fa-tools" aria-hidden="true"></i> Nossos Serviços
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="image-produtos/Capacete.png" alt="BW EXTINTORES - Segurança Contra Incêndios" loading="lazy" width="700" height="400">
+                </div>
+            </div>
+        </div>
+        
+        <button class="scroll-down" onclick="document.getElementById('differentials').scrollIntoView({behavior: 'smooth'})" aria-label="Rolar para baixo">
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </button>
+    </section>
+
+    <!-- Carrossel de Produtos -->
+    <section class="carousel-section" aria-labelledby="carousel-title">
+        <div class="container">
+            <div class="section-title">
+                <h2 id="carousel-title">Nossos Produtos</h2>
+                <div class="section-subtitle">
+                    <i class="fas fa-fire-extinguisher" aria-hidden="true"></i>
+                    <span>Extintores de alta qualidade para todas as necessidades</span>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-track" aria-live="polite">
+                <!-- Itens do carrossel - duplicados para criar loop infinito -->
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="image-produtos/2kg.png" alt="Extintor 2kg ABC" loading="lazy">
+                    </div>
+                    <p>Extintor 2kg ABC</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="image-produtos/4kg.png" alt="Extintor 4kg ABC" loading="lazy">
+                    </div>
+                    <p>Extintor 4kg ABC</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="image-produtos/6kgabc.png" alt="Extintor 6kg ABC" loading="lazy">
+                    </div>
+                    <p>Extintor 6kg ABC</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="image-produtos/8kgabc.png" alt="Extintor 8kg ABC" loading="lazy">
+                    </div>
+                    <p>Extintor 8kg ABC</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="image-produtos/12kgabc.png" alt="Extintor 12kg ABC" loading="lazy">
+                    </div>
+                    <p>Extintor 12kg ABC</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="image-produtos/PlacasVermelhas.jpg" alt="Sinalizações de Combate a Incêndios" loading="lazy">
+                    </div>
+                    <p>Sinalizações de Combate a Incêndios</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="image-produtos/carretinha20abc.png" alt="Carretinha 20kg ABC" loading="lazy">
+                    </div>
+                    <p>Carretinha 20kg ABC</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="image-produtos/carretinha50kg_abc.png" alt="Carretinha 50kg ABC" loading="lazy">
+                    </div>
+                    <p>Carretinha 50kg ABC</p>
+                </div>
+                <!-- Itens duplicados para efeito de loop -->
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="image-produtos/2kg.png" alt="Extintor 2kg ABC" loading="lazy">
+                    </div>
+                    <p>Extintor 2kg ABC</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="image-produtos/4kg.png" alt="Extintor 4kg ABC" loading="lazy">
+                    </div>
+                    <p>Extintor 4kg ABC</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="image-produtos/6kgabc.png" alt="Extintor 6kg ABC" loading="lazy">
+                    </div>
+                    <p>Extintor 6kg ABC</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="image-produtos/8kgabc.png" alt="Extintor 8kg ABC" loading="lazy">
+                    </div>
+                    <p>Extintor 8kg ABC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="floating-differentials" id="differentials" aria-labelledby="differentials-title">
+        <div class="container">
+            <div class="section-title">
+                <h2 id="differentials-title">Por que Escolher a BW EXTINTORES?</h2>
+                <div class="section-subtitle">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <span>Conheça nossos diferenciais exclusivos</span>
+                </div>
+            </div>
+            <div class="differentials-grid">
+                <div class="differential-card fade-in">
+                    <div class="differential-icon">
+                        <i class="fas fa-bolt" aria-hidden="true"></i>
+                    </div>
+                    <h3>Agilidade e Eficiência</h3>
+                    <p>Atendimento rápido e eficiente para atender suas necessidades com urgência. Entregamos no prazo combinado, sem comprometer a qualidade.</p>
+                </div>
+                <div class="differential-card fade-in">
+                    <div class="differential-icon">
+                        <i class="fas fa-medal" aria-hidden="true"></i>
+                    </div>
+                    <h3>Qualidade Garantida</h3>
+                    <p>Produtos e serviços de alta qualidade que atendem às normas técnicas. Trabalhamos apenas com materiais certificados e de procedência.</p>
+                </div>
+                <div class="differential-card fade-in">
+                    <div class="differential-icon">
+                        <i class="fas fa-tags" aria-hidden="true"></i>
+                    </div>
+                    <h3>Preços Competitivos</h3>
+                    <p>Oferecemos um serviço de qualidade e eficiência com preços que cabem no bolso de todos os clientes, sem abrir mão da excelência.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+        <div class="container">
+            <div class="section-title">
+                <h2 id="about-title">Sobre Nós</h2>
+                <div class="section-subtitle">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <span>Proteção e segurança há anos no mercado</span>
+                </div>
+            </div>
+            <div class="about-content fade-in">
+                <div class="about-image">
+                    <img src="image/logonomebw.png" alt="BW EXTINTORES" width="350" height="350" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <h3>Um pouco da Nossa Historia</h3>
+                    <p>Há 6 anos no mercado, a BW EXTINTORES é referência em segurança contra incêndios no estado do Pará. Nossa missão é proteger vidas e patrimônios através de produtos e serviços de alta qualidade.</p>
+                    <p>Somos uma empresa credenciada pelo Inmetro e Corpo de Bombeiros do Estado do Pará, garantindo que todos os nossos produtos e serviços estejam em conformidade com as normas técnicas vigentes.</p>
+                    <p>Oferecemos atendimento personalizado, agilidade na entrega e um compromisso inabalável com a qualidade em tudo o que fazemos. Nosso lema é sempre atender bem todos os amigos e clientes.</p>
+                    <div class="about-buttons">
+                        <a href="https://www.instagram.com/bw_extintores?igsh=NnNjY2V4ZGVmbmI5" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Visitar nosso Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>Instagram
+                        </a>
+                        <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar um orçamento" class="btn btn-premium" target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento via WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services section-dark" id="services" aria-labelledby="services-title">
+        <div class="container">
+            <div class="section-title">
+                <h2 id="services-title">Nossos Serviços</h2>
+                <div class="section-subtitle">
+                    <i class="fas fa-cogs" aria-hidden="true"></i>
+                    <span>Soluções completas em segurança contra incêndio</span>
+                </div>
+            </div>
+            <div class="services-grid fade-in">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="image-produtos/HidrostaticoExt.png" alt="Venda de Extintores" loading="lazy">
+                    </div>
+                    <h3>Venda de Extintores</h3>
+                    <p>Oferecemos extintores novos de todos os tipos e modelos, com a garantia de qualidade BW EXTINTORES. Trabalhamos com as melhores marcas do mercado e produtos certificados pelo Inmetro.</p>
+                    <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar orçamento para venda de extintores" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar venda de extintores via WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar Serviço
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="image-produtos/recarga.jpg" alt="Recarga de Extintores" loading="lazy">
+                    </div>
+                    <h3>Recarga de Extintores</h3>
+                    <p>Serviço especializado de recarga para todos os tipos de extintores, seguindo rigorosos padrões de qualidade. Utilizamos apenas produtos certificados e realizamos testes de pressão para garantir a eficiência.</p>
+                    <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar orçamento para recarga de extintores" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar recarga de extintores via WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar Serviço
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="image-produtos/manutenção.jpg" alt="Manutenção e Inspeção" loading="lazy">
+                    </div>
+                    <h3>Manutenção e Inspeção</h3>
+                    <p>Realizamos manutenção preventiva e corretiva em extintores, garantindo seu perfeito funcionamento. Nossos técnicos são treinados e certificados para atender todas as normas de segurança.</p>
+                    <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar orçamento para manutenção de extintores" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar manutenção de extintores via WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar Serviço
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="image-produtos/teste.avif" alt="Teste Hidrostático" loading="lazy">
+                    </div>
+                    <h3>Teste Hidrostático</h3>
+                    <p>Realizado os Testes Hidrostático com equipamentos de ponta por técnicos qualificados, conforme normas Inmetro e Bombeiros. Certificado de conformidade incluído.</p>
+                    <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar orçamento para Teste Hidrostático" class="btn btn-premium" target="_blank" rel="noopener noreferrer" aria-label="Solicitar teste hidrostático via WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar Serviço
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="image-produtos/projeto.jpg" alt="Projetos de Combate a Incêndio" loading="lazy">
+                    </div>
+                    <h3>Projetos de Combate a Incêndio</h3>
+                    <p>Desenvolvemos projetos completos de combate a incêndio de acordo com as normas técnicas. Elaboração de memorial descritivo, plantas e especificações técnicas.</p>
+                    <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar orçamento para Projeto de Combate a Incêndio" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar projeto de combate a incêndio via WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar Serviço
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="image-produtos/hidrante.jpg" alt="Instalação de Hidrantes" loading="lazy">
+                    </div>
+                    <h3>Instalação de Hidrantes</h3>
+                    <p>Instalação e manutenção de sistemas de hidrantes conforme normas do Corpo de Bombeiros. Realizamos testes de pressão e vazão para garantir o funcionamento adequado.</p>
+                    <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar orçamento para Instalação de Hidrantes" class="btn btn-premium" target="_blank" rel="noopener noreferrer" aria-label="Solicitar instalação de hidrantes via WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar Serviço
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products" aria-labelledby="products-title">
+        <div class="container">
+            <div class="section-title">
+                <h2 id="products-title">Nossos Produtos</h2>
+                <div class="section-subtitle">
+                    <i class="fas fa-box-open" aria-hidden="true"></i>
+                    <span>Extintores certificados para todas as necessidades</span>
+                </div>
+            </div>
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-class">
+                        <div class="class-badge class-a">A</div>
+                        <div class="class-badge class-b">B</div>
+                        <div class="class-badge class-c">C</div>
+                    </div>
+                    <div class="product-image">
+                        <img src="imageExtintores/2kg.png" alt="Extintor 2kg ABC" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Extintor 2kg ABC</h3>
+                        <p>Ideal para pequenos ambientes</p>
+                        <div class="product-actions">
+                            <div class="product-action">
+                                <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar orçamento para Extintor 2kg ABC" class="btn btn-whatsapp btn-small" target="_blank" rel="noopener noreferrer" aria-label="Solicitar Extintor 2kg ABC via WhatsApp">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card fade-in">
+                    <div class="product-class">
+                        <div class="class-badge class-a">A</div>
+                        <div class="class-badge class-b">B</div>
+                        <div class="class-badge class-c">C</div>
+                    </div>
+                    <div class="product-image">
+                        <img src="imageExtintores/4kg.png" alt="Extintor 4kg ABC" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Extintor 4kg ABC</h3>
+                        <p>Para uso residencial e comercial</p>
+                        <div class="product-actions">
+                            <div class="product-action">
+                                <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar orçamento para Extintor 4kg ABC" class="btn btn-whatsapp btn-small" target="_blank" rel="noopener noreferrer" aria-label="Solicitar Extintor 4kg ABC via WhatsApp">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card fade-in">
+                    <div class="product-class">
+                        <div class="class-badge class-a">A</div>
+                        <div class="class-badge class-b">B</div>
+                        <div class="class-badge class-c">C</div>
+                    </div>
+                    <div class="product-image">
+                        <img src="imageExtintores/6kgabc.png" alt="Extintor 6kg ABC" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Extintor 6kg ABC</h3>
+                        <p>Capacidade média para diversos ambientes</p>
+                        <div class="product-actions">
+                            <div class="product-action">
+                                <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar orçamento para Extintor 6kg ABC" class="btn btn-whatsapp btn-small" target="_blank" rel="noopener noreferrer" aria-label="Solicitar Extintor 6kg ABC via WhatsApp">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card fade-in">
+                    <div class="product-class">
+                        <div class="class-badge class-a">A</div>
+                        <div class="class-badge class-b">B</div>
+                        <div class="class-badge class-c">C</div>
+                    </div>
+                    <div class="product-image">
+                        <img src="imageExtintores/8kgabc.png" alt="Extintor 8kg ABC" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Extintor 8kg ABC</h3>
+                        <p>Para ambientes comerciais</p>
+                        <div class="product-actions">
+                            <div class="product-action">
+                                <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar orçamento para Extintor 8kg ABC" class="btn btn-whatsapp btn-small" target="_blank" rel="noopener noreferrer" aria-label="Solicitar Extintor 8kg ABC via WhatsApp">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card fade-in">
+                    <div class="product-class">
+                        <div class="class-badge class-a">A</div>
+                        <div class="class-badge class-b">B</div>
+                        <div class="class-badge class-c">C</div>
+                    </div>
+                    <div class="product-image">
+                        <img src="imageExtintores/12kgabc.png" alt="Extintor 12kg ABC" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Extintor 12kg ABC</h3>
+                        <p>Para ambientes de maior risco</p>
+                        <div class="product-actions">
+                            <div class="product-action">
+                                <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar orçamento para Extintor 12kg ABC" class="btn btn-whatsapp btn-small" target="_blank" rel="noopener noreferrer" aria-label="Solicitar Extintor 12kg ABC via WhatsApp">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card fade-in">
+                    <div class="product-class">
+                        <div class="class-badge class-b">B</div>
+                        <div class="class-badge class-c">C</div>
+                    </div>
+                    <div class="product-image">
+                        <img src="imageExtintores/co2_4kg.png" alt="Extintor CO2 4kg" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Extintor CO2 4kg</h3>
+                        <p>Ideal para equipamentos elétricos</p>
+                        <div class="product-actions">
+                            <div class="product-action">
+                                <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar orçamento para Extintor CO2 4kg" class="btn btn-whatsapp btn-small" target="_blank" rel="noopener noreferrer" aria-label="Solicitar Extintor CO2 4kg via WhatsApp">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map" id="map" aria-labelledby="map-title">
+        <div class="container">
+            <div class="section-title">
+                <h2 id="map-title">Nossa Localização</h2>
+                <div class="section-subtitle">
+                    <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                    <span>Encontre-nos facilmente em Paragominas</span>
+                </div>
+            </div>
+            <div class="map-container fade-in">
+                <div class="map-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.123456789012!2d-47.352008738403036!3d-2.977304552245123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92d3a2e3b3b3b3b3%3A0x3b3b3b3b3b3b3b3b!2sAv.%20Porto%20Alegre%2C%20204%20-%20Jardim%20Bela%20Vista%2C%20Paragominas%20-%20PA%2C%2068628-300!5e0!3m2!1spt-BR!2sbr!4v1689876543210" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização da BW EXTINTORES em Paragominas"></iframe>
+                </div>
+                <div class="map-info">
+                    <h3>BW EXTINTORES</h3>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Av. Porto Alegre, 204 - Jardim Bela Vista, Paragominas - PA</p>
+                    <p><i class="fas fa-clock" aria-hidden="true"></i> Segunda a Sexta: 8h às 18h | Sábado: 8h às 12h</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> (94) 98439-4383 | (91) 99291-1531</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> bwextintoresltda@gmail.com</p>
+                    <a href="https://maps.app.goo.gl/gDepZbrivDiZnC1m9" class="btn btn-premium" target="_blank" rel="noopener noreferrer" aria-label="Ver rotas no Google Maps">
+                        <i class="fas fa-directions" aria-hidden="true"></i> Como Chegar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq section-dark" id="faq" aria-labelledby="faq-title">
+        <div class="container">
+            <div class="section-title">
+                <h2 id="faq-title">Perguntas Frequentes</h2>
+                <div class="section-subtitle">
+                    <i class="fas fa-question-circle" aria-hidden="true"></i>
+                    <span>Tire suas dúvidas sobre nossos produtos e serviços</span>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false" aria-controls="faq-answer-1">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-tools faq-icon" aria-hidden="true"></i>
+                            <span>Com que frequência devo fazer a manutenção do extintor?</span>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="faq-answer" id="faq-answer-1">
+                        <p>De acordo com as normas técnicas, a manutenção deve ser realizada anualmente ou sempre que o extintor for acionado. Além disso, é necessário realizar inspeções visuais mensais para verificar se o equipamento está em condições de uso.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false" aria-controls="faq-answer-2">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-fire faq-icon" aria-hidden="true"></i>
+                            <span>Quais tipos de extintor são indicados para cada tipo de incêndio?</span>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="faq-answer" id="faq-answer-2">
+                        <p>Existem diferentes classes de incêndio e cada uma requer um tipo específico de extintor:</p>
+                        <ul>
+                            <li>Classe A (materiais sólidos): extintores de água ou pó químico ABC</li>
+                            <li>Classe B (líquidos inflamáveis): extintores de pó químico BC ou CO2</li>
+                            <li>Classe C (equipamentos elétricos): extintores de CO2 ou pó químico BC</li>
+                            <li>Classe D (metais combustíveis): extintores específicos para metais</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false" aria-controls="faq-answer-3">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-map-marker-alt faq-icon" aria-hidden="true"></i>
+                            <span>Como devo posicionar os extintores no meu estabelecimento?</span>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="faq-answer" id="faq-answer-3">
+                        <p>Os extintores devem ser instalados em locais de fácil acesso e visibilidade, preferencialmente próximos às saídas de emergência. Devem estar fixados em suportes apropriados a uma altura de aproximadamente 1,60m do piso. É importante que não haja obstáculos que impeçam o acesso rápido ao equipamento em caso de emergência.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false" aria-controls="faq-answer-4">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-calendar-alt faq-icon" aria-hidden="true"></i>
+                            <span>Qual a validade de um extintor?</span>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="faq-answer" id="faq-answer-4">
+                        <p>Não existe uma validade específica para extintores, mas eles devem passar por testes hidrostáticos a cada 5 anos para verificar a integridade do cilindro. Além disso, a carga do agente extintor deve ser renovada conforme necessário, geralmente a cada ano ou após o uso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="section-title">
+                <h2 id="contact-title">Entre em Contato</h2>
+                <div class="section-subtitle">
+                    <i class="fas fa-comments" aria-hidden="true"></i>
+                    <span>Estamos prontos para atender suas necessidades</span>
+                </div>
+            </div>
+            <div class="contact-cards fade-in">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <h3>Telefones</h3>
+                    <p>(94) 98439-4383<br>(91) 99291-1531</p>
+                    <a href="tel:94984394383" class="btn" aria-label="Ligar para (94) 98439-4383">Ligar Agora</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Atendimento rápido via WhatsApp</p>
+                    <a href="https://wa.me/55949984394383" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Enviar mensagem no WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Enviar Mensagem
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <h3>E-mail</h3>
+                    <p>bwextintoresltda@gmail.com</p>
+                    <a href="mailto:bwextintoresltda@gmail.com" class="btn" aria-label="Enviar e-mail para bwextintoresltda@gmail.com">Enviar E-mail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>BW EXTINTORES</h3>
+                    <p>Proteção contra incêndios com qualidade e agilidade. Empresa credenciada Inmetro e Corpo de Bombeiros do Pará.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#products">Produtos</a></li>
+                        <li><a href="#differentials">Diferenciais</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone" aria-hidden="true"></i> (94) 98439-4383</li>
+                        <li><i class="fas fa-phone" aria-hidden="true"></i> (91) 99291-1531</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> bwextintoresltda@gmail.com</li>
+                        <li><i class="fab fa-instagram" aria-hidden="true"></i> @bw_extintores</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BW EXTINTORES - CNPJ: 62.022.890/0001-90 - Todos os direitos reservados.</p>
+                <p style="margin-top: 10px; font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);">
+                    Desenvolvido por 
+                    <a href="https://wa.me/5591998361022?text=Olá! Gostaria de informações sobre desenvolvimento de sites" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style="color: var(--accent-yellow); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; font-weight: 600; transition: all 0.3s ease;"
+                    aria-label="Contatar desenvolvedor JR Dev">
+                        <i class="fab fa-whatsapp" style="color: #25D366;" aria-hidden="true"></i> 
+                        <span>JR Dev</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/55949984394383" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Falar conosco no WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script>
+        // Menu Mobile
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function toggleMobileMenu() {
+            const isActive = navMenu.classList.contains('active');
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', !isActive);
+            document.body.style.overflow = !isActive ? 'hidden' : '';
+        }
+
+        hamburger.addEventListener('click', toggleMobileMenu);
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+            
+            // Ativar link da seção atual
+            const sections = document.querySelectorAll('section');
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+
+        // Animação de entrada
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const appearOnScroll = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, { 
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        fadeElements.forEach(element => {
+            appearOnScroll.observe(element);
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Fechar todos os itens
+                faqItems.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+                
+                // Abrir o item clicado se não estava ativo
+                if (!isActive) {
+                    item.classList.add('active');
+                    question.setAttribute('aria-expanded', 'true');
+                }
+            });
+            
+            // Suporte a teclado
+            question.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    question.click();
+                }
+            });
+        });
+
+        // Scroll suave para âncoras
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                
+                if (href !== '#' && href !== '') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    
+                    if (target) {
+                        const headerHeight = header.offsetHeight;
+                        const targetPosition = target.offsetTop - headerHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Animação do título do hero
+        document.addEventListener('DOMContentLoaded', function() {
+            const heroTitleSpan = document.querySelector('.hero h1 span');
+            if (heroTitleSpan) {
+                setTimeout(() => {
+                    heroTitleSpan.classList.add('animate');
+                }, 1000);
+            }
+            
+            // Prevenir overflow horizontal
+            document.body.style.overflowX = 'hidden';
+        });
+    </script>
+</body>
+</html>
