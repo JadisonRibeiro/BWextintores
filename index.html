@@ -186,6 +186,15 @@
             background-color: white;
         }
         
+        /* Divisor de Seção */
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0,0,0,0.1), transparent);
+            margin: 0 auto;
+            width: 80%;
+            max-width: 800px;
+        }
+        
         /* Hero Section Melhorada */
         .hero {
             height: 100vh;
@@ -397,12 +406,6 @@
             object-fit: contain;
         }
 
-        .carousel-item p {
-            font-weight: 500;
-            color: var(--text-dark);
-            font-size: 0.9rem;
-        }
-
         /* Seções comuns */
         section {
             padding: 80px 0;
@@ -513,6 +516,19 @@
             padding: 8px 16px;
             font-size: 0.9rem;
             min-width: auto;
+        }
+
+        /* Botão Nossos Serviços Personalizado */
+        .btn-services {
+            background-color: transparent;
+            color: #000;
+            border: 2px solid #000;
+        }
+
+        .btn-services:hover,
+        .btn-services:focus {
+            background-color: #000;
+            color: white;
         }
 
         /* Diferenciais */
@@ -1293,13 +1309,12 @@
                 </div>
                 <ul class="nav-menu" role="menubar">
                     <li class="nav-item" role="none"><a href="#home" class="nav-link" role="menuitem"><i class="fas fa-home" aria-hidden="true"></i> <span>Início</span></a></li>
-                    <li class="nav-item" role="none"><a href="#about" class="nav-link" role="menuitem"><i class="fas fa-info-circle" aria-hidden="true"></i> <span>Sobre</span></a></li>
-                    <li class="nav-item" role="none"><a href="#services" class="nav-link" role="menuitem"><i class="fas fa-tools" aria-hidden="true"></i> <span>Serviços</span></a></li>
-                    <li class="nav-item" role="none"><a href="#products" class="nav-link" role="menuitem"><i class="fas fa-fire-extinguisher" aria-hidden="true"></i> <span>Produtos</span></a></li>
-                    <li class="nav-item" role="none"><a href="#differentials" class="nav-link" role="menuitem"><i class="fas fa-star" aria-hidden="true"></i> <span>Diferenciais</span></a></li>
-                    <li class="nav-item" role="none"><a href="#map" class="nav-link" role="menuitem"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span>Localização</span></a></li>
-                    <li class="nav-item" role="none"><a href="#faq" class="nav-link" role="menuitem"><i class="fas fa-question-circle" aria-hidden="true"></i> <span>FAQ</span></a></li>
-                    <li class="nav-item" role="none"><a href="#contact" class="nav-link" role="menuitem"><i class="fas fa-envelope" aria-hidden="true"></i> <span>Contato</span></a></li>
+                    <li class="nav-item" role="none"><a href="#differentials" class="nav-link" role="menuitem"></i> <span>Diferenciais</span></a></li>
+                    <li class="nav-item" role="none"><a href="#about" class="nav-link" role="menuitem"></i> <span>Sobre</span></a></li>
+                    <li class="nav-item" role="none"><a href="#services" class="nav-link" role="menuitem"></i> <span>Serviços</span></a></li>
+                    <li class="nav-item" role="none"><a href="#products" class="nav-link" role="menuitem"></i> <span>Produtos</span></a></li>
+                    <li class="nav-item" role="none"><a href="#map" class="nav-link" role="menuitem"></i> <span>Localização</span></a></li>
+                    <li class="nav-item" role="none"><a href="#contact" class="nav-link" role="menuitem"></i> <span>Contato</span></a></li>
                 </ul>
                 <button class="hamburger" aria-label="Menu mobile" aria-expanded="false" aria-controls="nav-menu">
                     <span class="bar"></span>
@@ -1340,7 +1355,7 @@
                         <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar um orçamento" class="btn btn-premium" target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento via WhatsApp">
                             <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar Orçamento
                         </a>
-                        <a href="#services" class="btn">
+                        <a href="#services" class="btn btn-services">
                             <i class="fas fa-tools" aria-hidden="true"></i> Nossos Serviços
                         </a>
                     </div>
@@ -1355,6 +1370,8 @@
             <i class="fas fa-chevron-down" aria-hidden="true"></i>
         </button>
     </section>
+
+    <div class="section-divider"></div>
 
     <!-- Carrossel de Produtos -->
     <section class="carousel-section" aria-labelledby="carousel-title">
@@ -1374,78 +1391,47 @@
                     <div class="carousel-image">
                         <img src="image-produtos/2kg.png" alt="Extintor 2kg ABC" loading="lazy">
                     </div>
-                    <p>Extintor 2kg ABC</p>
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-image">
                         <img src="image-produtos/4kg.png" alt="Extintor 4kg ABC" loading="lazy">
                     </div>
-                    <p>Extintor 4kg ABC</p>
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-image">
                         <img src="image-produtos/6kgabc.png" alt="Extintor 6kg ABC" loading="lazy">
                     </div>
-                    <p>Extintor 6kg ABC</p>
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-image">
                         <img src="image-produtos/8kgabc.png" alt="Extintor 8kg ABC" loading="lazy">
                     </div>
-                    <p>Extintor 8kg ABC</p>
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-image">
                         <img src="image-produtos/12kgabc.png" alt="Extintor 12kg ABC" loading="lazy">
                     </div>
-                    <p>Extintor 12kg ABC</p>
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-image">
                         <img src="image-produtos/PlacasVermelhas.jpg" alt="Sinalizações de Combate a Incêndios" loading="lazy">
                     </div>
-                    <p>Sinalizações de Combate a Incêndios</p>
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-image">
                         <img src="image-produtos/carretinha20abc.png" alt="Carretinha 20kg ABC" loading="lazy">
                     </div>
-                    <p>Carretinha 20kg ABC</p>
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-image">
                         <img src="image-produtos/carretinha50kg_abc.png" alt="Carretinha 50kg ABC" loading="lazy">
                     </div>
-                    <p>Carretinha 50kg ABC</p>
-                </div>
-                <!-- Itens duplicados para efeito de loop -->
-                <div class="carousel-item">
-                    <div class="carousel-image">
-                        <img src="image-produtos/2kg.png" alt="Extintor 2kg ABC" loading="lazy">
-                    </div>
-                    <p>Extintor 2kg ABC</p>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-image">
-                        <img src="image-produtos/4kg.png" alt="Extintor 4kg ABC" loading="lazy">
-                    </div>
-                    <p>Extintor 4kg ABC</p>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-image">
-                        <img src="image-produtos/6kgabc.png" alt="Extintor 6kg ABC" loading="lazy">
-                    </div>
-                    <p>Extintor 6kg ABC</p>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-image">
-                        <img src="image-produtos/8kgabc.png" alt="Extintor 8kg ABC" loading="lazy">
-                    </div>
-                    <p>Extintor 8kg ABC</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="section-divider"></div>
 
     <section class="floating-differentials" id="differentials" aria-labelledby="differentials-title">
         <div class="container">
@@ -1482,6 +1468,8 @@
         </div>
     </section>
 
+    <div class="section-divider"></div>
+
     <section class="about" id="about" aria-labelledby="about-title">
         <div class="container">
             <div class="section-title">
@@ -1504,14 +1492,13 @@
                         <a href="https://www.instagram.com/bw_extintores?igsh=NnNjY2V4ZGVmbmI5" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Visitar nosso Instagram">
                             <i class="fab fa-instagram" aria-hidden="true"></i>Instagram
                         </a>
-                        <a href="https://wa.me/55949984394383?text=Olá! Gostaria de solicitar um orçamento" class="btn btn-premium" target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento via WhatsApp">
-                            <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar Orçamento
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="section-divider"></div>
 
     <section class="services section-dark" id="services" aria-labelledby="services-title">
         <div class="container">
@@ -1591,6 +1578,8 @@
             </div>
         </div>
     </section>
+
+    <div class="section-divider"></div>
 
     <section class="products" id="products" aria-labelledby="products-title">
         <div class="container">
@@ -1736,6 +1725,8 @@
         </div>
     </section>
 
+    <div class="section-divider"></div>
+
     <section class="map" id="map" aria-labelledby="map-title">
         <div class="container">
             <div class="section-title">
@@ -1762,6 +1753,8 @@
             </div>
         </div>
     </section>
+
+    <div class="section-divider"></div>
 
     <section class="faq section-dark" id="faq" aria-labelledby="faq-title">
         <div class="container">
@@ -1831,6 +1824,8 @@
         </div>
     </section>
 
+    <div class="section-divider"></div>
+
     <section class="contact" id="contact" aria-labelledby="contact-title">
         <div class="container">
             <div class="section-title">
@@ -1877,6 +1872,17 @@
                 <div class="footer-column">
                     <h3>BW EXTINTORES</h3>
                     <p>Proteção contra incêndios com qualidade e agilidade. Empresa credenciada Inmetro e Corpo de Bombeiros do Pará.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/bw_extintores?igsh=NnNjY2V4ZGVmbmI5" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-column">
                     <h3>Links Rápidos</h3>
