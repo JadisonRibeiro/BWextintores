@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BW EXTINTORES - Venda, Recarga e Manutenção de Extintores no Pará</title>
+    <title>BW EXTINTORES</title>
     <meta name="description" content="BW EXTINTORES: Referência no Pará em venda, recarga e manutenção de extintores. Empresa credenciada pelo Inmetro e Corpo de Bombeiros. Atendemos todo o estado.">
     <meta name="keywords" content="extintor, incêndio, segurança, Pará, Paragominas, recarga, manutenção, Inmetro, bombeiros">
     <meta name="author" content="BW EXTINTORES">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="image/iconeBW.png">
     
     <!-- Open Graph -->
     <meta property="og:title" content="BW EXTINTORES - Proteção Contra Incêndios no Pará">
@@ -360,7 +363,7 @@
             border: none;
         }
 
-        /* Carrossel de Produtos */
+        /* Carrossel de Produtos Melhorado */
         .carousel-section {
             padding: 60px 0;
             background-color: var(--dark-gray);
@@ -378,17 +381,23 @@
 
         .carousel-track {
             display: flex;
-            animation: carousel-scroll 30s linear infinite;
+            animation: carousel-scroll 40s linear infinite;
+            width: max-content;
         }
 
         .carousel-item {
             flex: 0 0 auto;
-            width: 180px;
+            width: 200px;
             margin: 0 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .carousel-item:hover {
+            transform: scale(1.05);
         }
 
         .carousel-image {
@@ -398,12 +407,21 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 10px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: var(--shadow);
         }
 
         .carousel-image img {
             max-width: 100%;
             max-height: 100%;
             object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .carousel-item:hover .carousel-image img {
+            transform: scale(1.1);
         }
 
         /* Seções comuns */
@@ -521,14 +539,14 @@
         /* Botão Nossos Serviços Personalizado */
         .btn-services {
             background-color: transparent;
-            color: #000;
-            border: 2px solid #000;
+            color: white; /* Alterado para branco */
+            border: 2px solid white; /* Alterado para branco */
         }
 
         .btn-services:hover,
         .btn-services:focus {
-            background-color: #000;
-            color: white;
+            background-color: white; /* Alterado para branco */
+            color: var(--accent); /* Alterado para a cor do tema */
         }
 
         /* Diferenciais */
@@ -1066,7 +1084,7 @@
                 transform: translateX(0);
             }
             100% {
-                transform: translateX(calc(-200px * 8));
+                transform: translateX(calc(-200px * 16));
             }
         }
         
@@ -1094,11 +1112,13 @@
             
             .about-buttons {
                 flex-direction: column;
-                align-items: stretch;
+                align-items: center;
             }
             
             .about-buttons .btn {
                 text-align: center;
+                width: 100%;
+                max-width: 280px;
             }
             
             .map-container {
@@ -1233,6 +1253,11 @@
             .carousel-item {
                 width: 180px;
             }
+            
+            .about-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
         }
         
         @media (max-width: 480px) {
@@ -1280,6 +1305,7 @@
             
             .about-buttons {
                 flex-direction: column;
+                align-items: center;
             }
             
             .hero-features {
@@ -1294,6 +1320,11 @@
             
             .carousel-item {
                 width: 160px;
+            }
+            
+            .about-buttons {
+                flex-direction: column;
+                align-items: center;
             }
         }
     </style>
@@ -1378,7 +1409,7 @@
     <div class="section-title">
       <h2 id="carousel-title">Produtos de qualidade</h2>
       <div class="section-subtitle">
-        <i data-lucide="flame" aria-hidden="true"></i>
+        <i class="fas fa-fire" aria-hidden="true"></i>
         <span>Extintores, sinalizações e acessórios de combate a incêndio</span>
       </div>
     </div>
@@ -1390,43 +1421,50 @@
       <!-- Itens do carrossel - intercalados -->
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/2kg.png" alt="Extintor 2kg ABC" loading="lazy"></div></div>
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/placa_extintor_de_incendio_abc.webp" alt="Placa Extintor de Incêndio ABC" loading="lazy"></div></div>
-
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/4kg.png" alt="Extintor 4kg ABC" loading="lazy"></div></div>
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/placa_fotoluminescente_aperte_e_empurre.webp" alt="Placa Fotoluminescente Aperte e Empurre" loading="lazy"></div></div>
-
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/Suporte4_6kg.png" alt="Extintor 6kg ABC" loading="lazy"></div></div>
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/placa_fotoluminescente_e8_hidrante.webp" alt="Placa Fotoluminescente E8 Hidrante" loading="lazy"></div></div>
-
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/8kgabc.png" alt="Extintor 8kg ABC" loading="lazy"></div></div>
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/placa_mangueira.webp" alt="Placa Mangueira" loading="lazy"></div></div>
-
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/12kgabc.png" alt="Extintor 12kg ABC" loading="lazy"></div></div>
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/SuporteTripe.png" alt="Placas Verdes de Segurança" loading="lazy"></div></div>
-
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/co2_4kg.png" alt="Extintor CO2 4kg" loading="lazy"></div></div>
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/ponto_de_encontro.webp" alt="Placa Ponto de Encontro" loading="lazy"></div></div>
-
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/co2_6kg.png" alt="Extintor CO2 6kg" loading="lazy"></div></div>
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/saida_de_emergencia.webp" alt="Placa Saída de Emergência" loading="lazy"></div></div>
-
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/carretinha20abc.png" alt="Carretinha 20kg ABC" loading="lazy"></div></div>
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/carretinha50kg_abc.png" alt="Carretinha 50kg ABC" loading="lazy"></div></div>
-
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/Suporte2kg.png" alt="Suporte para Extintor 2kg" loading="lazy"></div></div>
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/Suporte4_6kg.png" alt="Suporte para Extintor 4kg/6kg" loading="lazy"></div></div>
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/SuporteTripe.png" alt="Suporte Tripé para Extintor" loading="lazy"></div></div>
-
-      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/HidrostaticoExt.png" alt="Teste Hidrostático de Extintores" loading="lazy"></div></div>
-      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/manutenção.jpg" alt="Serviço de Manutenção de Extintores" loading="lazy"></div></div>
-      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/projeto.jpg" alt="Projetos de Combate a Incêndio" loading="lazy"></div></div>
-      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/recarga.jpg" alt="Serviço de Recarga de Extintores" loading="lazy"></div></div>
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/Mangueira.webp" alt="Mangueira de Incêndio" loading="lazy"></div></div>
       <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/hidrante.jpg" alt="Hidrante de Incêndio" loading="lazy"></div></div>
-      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/Capacete.png" alt="Capacete de Bombeiro" loading="lazy"></div></div>
-      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/capacete bombeiro.png" alt="Capacete de Proteção" loading="lazy">
-      </div>
+      
+
+      <!-- Duplicação dos itens para criar loop infinito -->
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/2kg.png" alt="Extintor 2kg ABC" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/placa_extintor_de_incendio_abc.webp" alt="Placa Extintor de Incêndio ABC" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/4kg.png" alt="Extintor 4kg ABC" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/placa_fotoluminescente_aperte_e_empurre.webp" alt="Placa Fotoluminescente Aperte e Empurre" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/Suporte4_6kg.png" alt="Extintor 6kg ABC" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/placa_fotoluminescente_e8_hidrante.webp" alt="Placa Fotoluminescente E8 Hidrante" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/8kgabc.png" alt="Extintor 8kg ABC" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/placa_mangueira.webp" alt="Placa Mangueira" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/12kgabc.png" alt="Extintor 12kg ABC" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/SuporteTripe.png" alt="Placas Verdes de Segurança" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/co2_4kg.png" alt="Extintor CO2 4kg" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/ponto_de_encontro.webp" alt="Placa Ponto de Encontro" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/co2_6kg.png" alt="Extintor CO2 6kg" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/saida_de_emergencia.webp" alt="Placa Saída de Emergência" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/carretinha20abc.png" alt="Carretinha 20kg ABC" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/carretinha50kg_abc.png" alt="Carretinha 50kg ABC" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/Suporte2kg.png" alt="Suporte para Extintor 2kg" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/Suporte4_6kg.png" alt="Suporte para Extintor 4kg/6kg" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/SuporteTripe.png" alt="Suporte Tripé para Extintor" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/Mangueira.webp" alt="Mangueira de Incêndio" loading="lazy"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="image-produtos/hidrante.jpg" alt="Hidrante de Incêndio" loading="lazy"></div></div>
      </div>
-    </div>
   </div>
 </section>
 
